@@ -19,7 +19,6 @@
 }
 .main{
     height:30%;
-    background-color: aqua;
     border-radius:5px 5px 0 0;
     color:white;
     background-image:url("./images/section-image.avif");
@@ -79,3 +78,75 @@ button:hover{
 .section:hover{
     transform: scale(1.1);
 }
+
+@media only screen and (max-width:1030px){
+    .section{
+        height:48vh;
+        width:22vw;
+    }
+    .con-text{
+        font-size:1.3rem;
+    }
+    .heading{
+        padding-left:6.5%;
+        font-size:33px;
+    }
+    #dollar{
+        padding-left:10%;
+    }
+}
+
+@media only screen and (max-width:780px){
+    .section{
+        height:48vh;
+        width:25vw;
+    }
+    .con-text{
+        font-size:1.15rem;
+    }
+    .heading{
+        padding-top:1%;
+        padding-left:6%;
+        font-size:30px;
+    }
+    #dollar{
+        padding-left:3%;
+    }
+}
+
+@media only screen and (max-width:450px){
+    .container{
+        display:block;
+        height:160vh;
+    }
+    .section{
+        height:48vh;
+        width:60vw;
+        margin:2rem 0 0 4rem;
+    }
+}
+
+@media only screen and (max-width:380px){
+    #dollar{
+        padding-left:4%;
+    }
+}
+
+@media only screen and (max-width:330px){
+    .con-text{
+        font-size:1.1rem;
+    }
+    .mon{
+        font-size: 1.1rem;
+    }
+    .heading{
+        padding-top:2.5%;
+    }
+    #dollar{
+        padding-left:3%;
+    }
+    .section{
+        height:42vh;
+    }
+}
+
