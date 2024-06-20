@@ -10,13 +10,14 @@
     background-image:url("./images/background.jpg");
     background-size: cover;
 }
-.section{
+.section1, .section2, .section3{
     height:45vh;
     width:17vw;
     /* border:2px black solid; */
     margin-right:0.5%;
     border-radius:5px;
 }
+
 .main{
     height:30%;
     border-radius:5px 5px 0 0;
@@ -75,12 +76,62 @@ button:hover{
     background-color: rgb(35, 68, 158);
     color:white;
 }
-.section:hover{
+.section1:hover, .section2:hover, .section3:hover{
     transform: scale(1.1);
 }
 
+
+/* extra-begin */
+
+.popup{
+    position:fixed;
+    height:400px;
+    width:400px;
+    background-image: url("./images/con-bg.jpg");
+    background-size: cover;
+    align-content: center;
+    padding:3rem;
+    font-size:30px;
+    border-radius:5px;
+    visibility: hidden;
+} 
+
+#continue{
+    font-size: larger;
+    background-color:white;
+    padding:0.7rem;
+}
+#continue:hover{
+    cursor:pointer;
+    background-color: rgb(35, 68, 158);
+    color:white;
+}
+
+.checkmark{
+    position:fixed;
+    height:400px;
+    width:400px;
+    align-content: center;
+    padding:3rem;
+    border-radius:5px;
+    background-image:url("./images/checkmark.jpg");
+    background-size: cover;
+    visibility: hidden;
+}
+.on {
+    visibility: visible;
+    opacity: 100%;
+  }
+
+.off {
+    visibility: hidden;
+    opacity: 0;
+  }
+/* extra-end */
+
+
 @media only screen and (max-width:1030px){
-    .section{
+    .section1, .section2, .section3{
         height:48vh;
         width:22vw;
     }
@@ -94,10 +145,17 @@ button:hover{
     #dollar{
         padding-left:10%;
     }
+    .popup{
+        height:300px;
+        width:300px;
+        padding:3rem;
+        font-size:25px;
+        border-radius:3px;
+    } 
 }
 
 @media only screen and (max-width:780px){
-    .section{
+    .section1, .section2, .section3{
         height:48vh;
         width:25vw;
     }
@@ -119,10 +177,30 @@ button:hover{
         display:block;
         height:160vh;
     }
-    .section{
+    .section1, .section2, .section3{
         height:48vh;
         width:60vw;
         margin:2rem 0 0 4rem;
+    }
+    .popup{
+        height:200px;
+        width:200px;
+        padding:3rem;
+        font-size:18px;
+        border-radius:3px;
+        top:230px;
+        right:50px;
+    } 
+    .checkmark{
+        height:200px;
+        width:200px;
+        border-radius:3px;
+        top:230px;
+        right:50px;
+    } 
+    #continue{
+        font-size:20px;
+        padding:0.5rem;
     }
 }
 
@@ -148,8 +226,18 @@ button:hover{
     #dollar{
         padding-left:3%;
     }
-    .section{
+    .section1, .section2, .section3{
         height:42vh;
     }
+    .popup{
+        height:170px;
+        width:170px;
+        right:20px;
+    } 
+    .checkmark{
+        height:170px;
+        width:170px;
+        right:20px;
+    } 
 }
 
